@@ -4,7 +4,7 @@ using Microsoft.AspNetCore.Http;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 //Use namespace that reflects name of project
-namespace Template 
+namespace TravelDiary 
 {
   public class Startup
   {

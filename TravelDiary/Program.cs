@@ -1,7 +1,8 @@
 using System.IO;
 using Microsoft.AspNetCore.Hosting;
+using TravelDiary.Models;
 
-namespace ProjectName
+namespace TravelDiary
 {
   public class Program
   {
