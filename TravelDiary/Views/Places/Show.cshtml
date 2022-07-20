@@ -9,8 +9,15 @@
     <h1>List of Places traveled: </h1>
 
     <h2>@Model.CityName</h2>
+    <p>@Model.Description</p>
+    <p>@Model.Date</p>
+    <br>
+    <div style="padding:20px" >
 
-    <a href='/places/new'>Add another item</a>
-    <a href='/places'>View all items</a>
+    <center><img src="@Model.Image" width="300px"/></center>
+    </div>
+
+    <a href='/places/new'>Add another place you've been</a>
+    <a href='/places'>View all places visited</a>
   </body>
 </html>

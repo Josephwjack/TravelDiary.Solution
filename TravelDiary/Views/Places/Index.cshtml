@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
   </head>
   <body>
+    <div class="container">
     @using TravelDiary.Models;
 
     <h1>Places I've Been</h1>
@@ -22,7 +23,9 @@
       }
     </ul>
     <a href="/places/new">Add a new place.</a>
-
-
+    <form action="/places/delete" method="post">
+      <button type="submit" name="button">Clear All Items</button>
+    </form>
+    </div>
   </body>
 </html>

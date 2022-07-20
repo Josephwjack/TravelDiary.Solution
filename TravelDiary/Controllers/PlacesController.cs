@@ -21,9 +21,9 @@ namespace TravelDiary.Controllers
     }
 
     [HttpPost("/places")]
-    public ActionResult Create(string cityName)
+    public ActionResult Create(string cityName, string description, string date, string image)
     {
-      Place newPlace = new Place(cityName);
+      Place newPlace = new Place(cityName, description, date, image);
       return RedirectToAction("Index");
     }
 
@@ -32,6 +32,13 @@ namespace TravelDiary.Controllers
     {
       Place foundPlace = Place.Find(id);
       return View(foundPlace);
+    }
+
+    [HttpPost("/places/delete")]
+    public ActionResult DeleteAll()
+    {
+      Place.ClearAll();
+      return View();
     }
   }
 }
